@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      .group-header th {
+        font-size: 200%;
+      }
+      .sub-header th {
+        font-size: 150%;
+      }
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        white-space: nowrap;
+        padding: .3em;
+      }
+      table {
+        margin: 0 auto;
+      }
+      .severity {
+        text-align: center;
+        font-weight: bold;
+        color: #fafafa;
+      }
+      .severity-LOW .severity { background-color: #5fbb31; }
+      .severity-MEDIUM .severity { background-color: #e9c600; }
+      .severity-HIGH .severity { background-color: #ff8800; }
+      .severity-CRITICAL .severity { background-color: #e40000; }
+      .severity-UNKNOWN .severity { background-color: #747474; }
+      .severity-LOW { background-color: #5fbb3160; }
+      .severity-MEDIUM { background-color: #e9c60060; }
+      .severity-HIGH { background-color: #ff880060; }
+      .severity-CRITICAL { background-color: #e4000060; }
+      .severity-UNKNOWN { background-color: #74747460; }
+      table tr td:first-of-type {
+        font-weight: bold;
+      }
+      .links a,
+      .links[data-more-links=on] a {
+        display: block;
+      }
+      .links[data-more-links=off] a:nth-of-type(1n+5) {
+        display: none;
+      }
+      a.toggle-more-links { cursor: pointer; }
+    </style>
+    <title>deps/rabbitmq_auth_backend_http/examples/rabbitmq_auth_backend_spring_boot/pom.xml - Trivy Report - 2024-06-11 06:13:01.863074643 +0000 UTC m=+8.867510230 </title>
+    <script>
+      window.onload = function() {
+        document.querySelectorAll('td.links').forEach(function(linkCell) {
+          var links = [].concat.apply([], linkCell.querySelectorAll('a'));
+          [].sort.apply(links, function(a, b) {
+            return a.href > b.href ? 1 : -1;
+          });
+          links.forEach(function(link, idx) {
+            if (links.length > 3 && 3 === idx) {
+              var toggleLink = document.createElement('a');
+              toggleLink.innerText = "Toggle more links";
+              toggleLink.href = "#toggleMore";
+              toggleLink.setAttribute("class", "toggle-more-links");
+              linkCell.appendChild(toggleLink);
+            }
+            linkCell.appendChild(link);
+          });
+        });
+        document.querySelectorAll('a.toggle-more-links').forEach(function(toggleLink) {
+          toggleLink.onclick = function() {
+            var expanded = toggleLink.parentElement.getAttribute("data-more-links");
+            toggleLink.parentElement.setAttribute("data-more-links", "on" === expanded ? "off" : "on");
+            return false;
+          };
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <h1>deps/rabbitmq_auth_backend_http/examples/rabbitmq_auth_backend_spring_boot/pom.xml - Trivy Report - 2024-06-11 06:13:01.863107214 +0000 UTC m=+8.867542587</h1>
+    <table>
+      <tr class="group-header"><th colspan="6">pom</th></tr>
+      <tr class="sub-header">
+        <th>Package</th>
+        <th>Vulnerability ID</th>
+        <th>Severity</th>
+        <th>Installed Version</th>
+        <th>Fixed Version</th>
+        <th>Links</th>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">org.apache.tomcat.embed:tomcat-embed-core</td>
+        <td>CVE-2024-24549</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">10.1.18</td>
+        <td>8.5.99, 9.0.86, 10.1.19, 11.0.0-M17</td>
+        <td class="links" data-more-links="off">
+          <a href="http://www.openwall.com/lists/oss-security/2024/03/13/3">http://www.openwall.com/lists/oss-security/2024/03/13/3</a>
+          <a href="https://access.redhat.com/errata/RHSA-2024:3307">https://access.redhat.com/errata/RHSA-2024:3307</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2024-24549">https://access.redhat.com/security/cve/CVE-2024-24549</a>
+          <a href="https://bugzilla.redhat.com/2269607">https://bugzilla.redhat.com/2269607</a>
+          <a href="https://bugzilla.redhat.com/2269608">https://bugzilla.redhat.com/2269608</a>
+          <a href="https://errata.almalinux.org/9/ALSA-2024-3307.html">https://errata.almalinux.org/9/ALSA-2024-3307.html</a>
+          <a href="https://github.com/apache/tomcat">https://github.com/apache/tomcat</a>
+          <a href="https://github.com/apache/tomcat/commit/0cac540a882220231ba7a82330483cbd5f6b1f96">https://github.com/apache/tomcat/commit/0cac540a882220231ba7a82330483cbd5f6b1f96</a>
+          <a href="https://github.com/apache/tomcat/commit/810f49d5ff6d64b704af85d5b8d0aab9ec3c83f5">https://github.com/apache/tomcat/commit/810f49d5ff6d64b704af85d5b8d0aab9ec3c83f5</a>
+          <a href="https://github.com/apache/tomcat/commit/8e03be9f2698f2da9027d40b9e9c0c9429b74dc0">https://github.com/apache/tomcat/commit/8e03be9f2698f2da9027d40b9e9c0c9429b74dc0</a>
+          <a href="https://github.com/apache/tomcat/commit/d07c82194edb69d99b438828fe2cbfadbb207843">https://github.com/apache/tomcat/commit/d07c82194edb69d99b438828fe2cbfadbb207843</a>
+          <a href="https://linux.oracle.com/cve/CVE-2024-24549.html">https://linux.oracle.com/cve/CVE-2024-24549.html</a>
+          <a href="https://linux.oracle.com/errata/ELSA-2024-3666.html">https://linux.oracle.com/errata/ELSA-2024-3666.html</a>
+          <a href="https://lists.apache.org/thread/4c50rmomhbbsdgfjsgwlb51xdwfjdcvg">https://lists.apache.org/thread/4c50rmomhbbsdgfjsgwlb51xdwfjdcvg</a>
+          <a href="https://lists.debian.org/debian-lts-announce/2024/04/msg00001.html">https://lists.debian.org/debian-lts-announce/2024/04/msg00001.html</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-24549">https://nvd.nist.gov/vuln/detail/CVE-2024-24549</a>
+          <a href="https://security.netapp.com/advisory/ntap-20240402-0002">https://security.netapp.com/advisory/ntap-20240402-0002</a>
+          <a href="https://security.netapp.com/advisory/ntap-20240402-0002/">https://security.netapp.com/advisory/ntap-20240402-0002/</a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2024-24549">https://www.cve.org/CVERecord?id=CVE-2024-24549</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">org.apache.tomcat.embed:tomcat-embed-websocket</td>
+        <td>CVE-2024-23672</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">10.1.18</td>
+        <td>11.0.0-M17, 10.1.19, 9.0.86, 8.5.99</td>
+        <td class="links" data-more-links="off">
+          <a href="http://www.openwall.com/lists/oss-security/2024/03/13/4">http://www.openwall.com/lists/oss-security/2024/03/13/4</a>
+          <a href="https://access.redhat.com/errata/RHSA-2024:3307">https://access.redhat.com/errata/RHSA-2024:3307</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2024-23672">https://access.redhat.com/security/cve/CVE-2024-23672</a>
+          <a href="https://bugzilla.redhat.com/2269607">https://bugzilla.redhat.com/2269607</a>
+          <a href="https://bugzilla.redhat.com/2269608">https://bugzilla.redhat.com/2269608</a>
+          <a href="https://errata.almalinux.org/9/ALSA-2024-3307.html">https://errata.almalinux.org/9/ALSA-2024-3307.html</a>
+          <a href="https://github.com/apache/tomcat">https://github.com/apache/tomcat</a>
+          <a href="https://github.com/apache/tomcat/commit/0052b374684b613b0c849899b325ebe334ac6501">https://github.com/apache/tomcat/commit/0052b374684b613b0c849899b325ebe334ac6501</a>
+          <a href="https://github.com/apache/tomcat/commit/3631adb1342d8bbd8598802a12b63ad02c37d591">https://github.com/apache/tomcat/commit/3631adb1342d8bbd8598802a12b63ad02c37d591</a>
+          <a href="https://github.com/apache/tomcat/commit/52d6650e062d880704898d7d8c1b2b7a3efe8068">https://github.com/apache/tomcat/commit/52d6650e062d880704898d7d8c1b2b7a3efe8068</a>
+          <a href="https://github.com/apache/tomcat/commit/b0e3b1bd78de270d53e319d7cb79eb282aa53cb9">https://github.com/apache/tomcat/commit/b0e3b1bd78de270d53e319d7cb79eb282aa53cb9</a>
+          <a href="https://linux.oracle.com/cve/CVE-2024-23672.html">https://linux.oracle.com/cve/CVE-2024-23672.html</a>
+          <a href="https://linux.oracle.com/errata/ELSA-2024-3666.html">https://linux.oracle.com/errata/ELSA-2024-3666.html</a>
+          <a href="https://lists.apache.org/thread/cmpswfx6tj4s7x0nxxosvfqs11lvdx2f">https://lists.apache.org/thread/cmpswfx6tj4s7x0nxxosvfqs11lvdx2f</a>
+          <a href="https://lists.debian.org/debian-lts-announce/2024/04/msg00001.html">https://lists.debian.org/debian-lts-announce/2024/04/msg00001.html</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-23672">https://nvd.nist.gov/vuln/detail/CVE-2024-23672</a>
+          <a href="https://security.netapp.com/advisory/ntap-20240402-0002">https://security.netapp.com/advisory/ntap-20240402-0002</a>
+          <a href="https://security.netapp.com/advisory/ntap-20240402-0002/">https://security.netapp.com/advisory/ntap-20240402-0002/</a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2024-23672">https://www.cve.org/CVERecord?id=CVE-2024-23672</a>
+        </td>
+      </tr>
+      <tr class="severity-HIGH">
+        <td class="pkg-name">org.springframework:spring-web</td>
+        <td>CVE-2024-22243</td>
+        <td class="severity">HIGH</td>
+        <td class="pkg-version">6.1.3</td>
+        <td>6.1.4, 6.0.17, 5.3.32</td>
+        <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2024-22243">https://access.redhat.com/security/cve/CVE-2024-22243</a>
+          <a href="https://github.com/spring-projects/spring-framework">https://github.com/spring-projects/spring-framework</a>
+          <a href="https://github.com/spring-projects/spring-framework/blob/main/spring-web/src/main/java/org/springframework/web/util/UriComponentsBuilder.java">https://github.com/spring-projects/spring-framework/blob/main/spring-web/src/main/java/org/springframework/web/util/UriComponentsBuilder.java</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-22243">https://nvd.nist.gov/vuln/detail/CVE-2024-22243</a>
+          <a href="https://security.netapp.com/advisory/ntap-20240524-0001">https://security.netapp.com/advisory/ntap-20240524-0001</a>
+          <a href="https://spring.io/security/cve-2024-22243">https://spring.io/security/cve-2024-22243</a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2024-22243">https://www.cve.org/CVERecord?id=CVE-2024-22243</a>
+        </td>
+      </tr>
+      <tr class="severity-HIGH">
+        <td class="pkg-name">org.springframework:spring-web</td>
+        <td>CVE-2024-22259</td>
+        <td class="severity">HIGH</td>
+        <td class="pkg-version">6.1.3</td>
+        <td>6.1.5, 6.0.18, 5.3.33</td>
+        <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2024-22259">https://access.redhat.com/security/cve/CVE-2024-22259</a>
+          <a href="https://github.com/spring-projects/spring-framework">https://github.com/spring-projects/spring-framework</a>
+          <a href="https://github.com/spring-projects/spring-framework/commit/297cbae2990e1413537c55845a7e0ea0ffd9f9bb">https://github.com/spring-projects/spring-framework/commit/297cbae2990e1413537c55845a7e0ea0ffd9f9bb</a>
+          <a href="https://github.com/spring-projects/spring-framework/commit/381f790329a48b74c2a49fc1384dd68ca9153501">https://github.com/spring-projects/spring-framework/commit/381f790329a48b74c2a49fc1384dd68ca9153501</a>
+          <a href="https://github.com/spring-projects/spring-framework/commit/f2fd2f12269c6a781c5b2c20b3c24141055a3d68">https://github.com/spring-projects/spring-framework/commit/f2fd2f12269c6a781c5b2c20b3c24141055a3d68</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-22259">https://nvd.nist.gov/vuln/detail/CVE-2024-22259</a>
+          <a href="https://security.netapp.com/advisory/ntap-20240524-0002">https://security.netapp.com/advisory/ntap-20240524-0002</a>
+          <a href="https://spring.io/security/cve-2024-22259">https://spring.io/security/cve-2024-22259</a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2024-22259">https://www.cve.org/CVERecord?id=CVE-2024-22259</a>
+        </td>
+      </tr>
+      <tr class="severity-HIGH">
+        <td class="pkg-name">org.springframework:spring-web</td>
+        <td>CVE-2024-22262</td>
+        <td class="severity">HIGH</td>
+        <td class="pkg-version">6.1.3</td>
+        <td>5.3.34, 6.0.19, 6.1.6</td>
+        <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2024-22262">https://access.redhat.com/security/cve/CVE-2024-22262</a>
+          <a href="https://github.com/spring-projects/spring-framework">https://github.com/spring-projects/spring-framework</a>
+          <a href="https://github.com/spring-projects/spring-framework/blob/main/spring-web/src/main/java/org/springframework/web/util/UriComponentsBuilder.java">https://github.com/spring-projects/spring-framework/blob/main/spring-web/src/main/java/org/springframework/web/util/UriComponentsBuilder.java</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-22262">https://nvd.nist.gov/vuln/detail/CVE-2024-22262</a>
+          <a href="https://security.netapp.com/advisory/ntap-20240524-0003">https://security.netapp.com/advisory/ntap-20240524-0003</a>
+          <a href="https://spring.io/security/cve-2024-22262">https://spring.io/security/cve-2024-22262</a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2024-22262">https://www.cve.org/CVERecord?id=CVE-2024-22262</a>
+        </td>
+      </tr>
+      <tr><th colspan="6">No Misconfigurations found</th></tr>
+      <tr class="group-header"><th colspan="6">pom</th></tr>
+      <tr class="sub-header">
+        <th>Package</th>
+        <th>Vulnerability ID</th>
+        <th>Severity</th>
+        <th>Installed Version</th>
+        <th>Fixed Version</th>
+        <th>Links</th>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">org.apache.tomcat.embed:tomcat-embed-core</td>
+        <td>CVE-2024-24549</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">10.1.18</td>
+        <td>8.5.99, 9.0.86, 10.1.19, 11.0.0-M17</td>
+        <td class="links" data-more-links="off">
+          <a href="http://www.openwall.com/lists/oss-security/2024/03/13/3">http://www.openwall.com/lists/oss-security/2024/03/13/3</a>
+          <a href="https://access.redhat.com/errata/RHSA-2024:3307">https://access.redhat.com/errata/RHSA-2024:3307</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2024-24549">https://access.redhat.com/security/cve/CVE-2024-24549</a>
+          <a href="https://bugzilla.redhat.com/2269607">https://bugzilla.redhat.com/2269607</a>
+          <a href="https://bugzilla.redhat.com/2269608">https://bugzilla.redhat.com/2269608</a>
+          <a href="https://errata.almalinux.org/9/ALSA-2024-3307.html">https://errata.almalinux.org/9/ALSA-2024-3307.html</a>
+          <a href="https://github.com/apache/tomcat">https://github.com/apache/tomcat</a>
+          <a href="https://github.com/apache/tomcat/commit/0cac540a882220231ba7a82330483cbd5f6b1f96">https://github.com/apache/tomcat/commit/0cac540a882220231ba7a82330483cbd5f6b1f96</a>
+          <a href="https://github.com/apache/tomcat/commit/810f49d5ff6d64b704af85d5b8d0aab9ec3c83f5">https://github.com/apache/tomcat/commit/810f49d5ff6d64b704af85d5b8d0aab9ec3c83f5</a>
+          <a href="https://github.com/apache/tomcat/commit/8e03be9f2698f2da9027d40b9e9c0c9429b74dc0">https://github.com/apache/tomcat/commit/8e03be9f2698f2da9027d40b9e9c0c9429b74dc0</a>
+          <a href="https://github.com/apache/tomcat/commit/d07c82194edb69d99b438828fe2cbfadbb207843">https://github.com/apache/tomcat/commit/d07c82194edb69d99b438828fe2cbfadbb207843</a>
+          <a href="https://linux.oracle.com/cve/CVE-2024-24549.html">https://linux.oracle.com/cve/CVE-2024-24549.html</a>
+          <a href="https://linux.oracle.com/errata/ELSA-2024-3666.html">https://linux.oracle.com/errata/ELSA-2024-3666.html</a>
+          <a href="https://lists.apache.org/thread/4c50rmomhbbsdgfjsgwlb51xdwfjdcvg">https://lists.apache.org/thread/4c50rmomhbbsdgfjsgwlb51xdwfjdcvg</a>
+          <a href="https://lists.debian.org/debian-lts-announce/2024/04/msg00001.html">https://lists.debian.org/debian-lts-announce/2024/04/msg00001.html</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-24549">https://nvd.nist.gov/vuln/detail/CVE-2024-24549</a>
+          <a href="https://security.netapp.com/advisory/ntap-20240402-0002">https://security.netapp.com/advisory/ntap-20240402-0002</a>
+          <a href="https://security.netapp.com/advisory/ntap-20240402-0002/">https://security.netapp.com/advisory/ntap-20240402-0002/</a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2024-24549">https://www.cve.org/CVERecord?id=CVE-2024-24549</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">org.apache.tomcat.embed:tomcat-embed-websocket</td>
+        <td>CVE-2024-23672</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">10.1.18</td>
+        <td>11.0.0-M17, 10.1.19, 9.0.86, 8.5.99</td>
+        <td class="links" data-more-links="off">
+          <a href="http://www.openwall.com/lists/oss-security/2024/03/13/4">http://www.openwall.com/lists/oss-security/2024/03/13/4</a>
+          <a href="https://access.redhat.com/errata/RHSA-2024:3307">https://access.redhat.com/errata/RHSA-2024:3307</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2024-23672">https://access.redhat.com/security/cve/CVE-2024-23672</a>
+          <a href="https://bugzilla.redhat.com/2269607">https://bugzilla.redhat.com/2269607</a>
+          <a href="https://bugzilla.redhat.com/2269608">https://bugzilla.redhat.com/2269608</a>
+          <a href="https://errata.almalinux.org/9/ALSA-2024-3307.html">https://errata.almalinux.org/9/ALSA-2024-3307.html</a>
+          <a href="https://github.com/apache/tomcat">https://github.com/apache/tomcat</a>
+          <a href="https://github.com/apache/tomcat/commit/0052b374684b613b0c849899b325ebe334ac6501">https://github.com/apache/tomcat/commit/0052b374684b613b0c849899b325ebe334ac6501</a>
+          <a href="https://github.com/apache/tomcat/commit/3631adb1342d8bbd8598802a12b63ad02c37d591">https://github.com/apache/tomcat/commit/3631adb1342d8bbd8598802a12b63ad02c37d591</a>
+          <a href="https://github.com/apache/tomcat/commit/52d6650e062d880704898d7d8c1b2b7a3efe8068">https://github.com/apache/tomcat/commit/52d6650e062d880704898d7d8c1b2b7a3efe8068</a>
+          <a href="https://github.com/apache/tomcat/commit/b0e3b1bd78de270d53e319d7cb79eb282aa53cb9">https://github.com/apache/tomcat/commit/b0e3b1bd78de270d53e319d7cb79eb282aa53cb9</a>
+          <a href="https://linux.oracle.com/cve/CVE-2024-23672.html">https://linux.oracle.com/cve/CVE-2024-23672.html</a>
+          <a href="https://linux.oracle.com/errata/ELSA-2024-3666.html">https://linux.oracle.com/errata/ELSA-2024-3666.html</a>
+          <a href="https://lists.apache.org/thread/cmpswfx6tj4s7x0nxxosvfqs11lvdx2f">https://lists.apache.org/thread/cmpswfx6tj4s7x0nxxosvfqs11lvdx2f</a>
+          <a href="https://lists.debian.org/debian-lts-announce/2024/04/msg00001.html">https://lists.debian.org/debian-lts-announce/2024/04/msg00001.html</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-23672">https://nvd.nist.gov/vuln/detail/CVE-2024-23672</a>
+          <a href="https://security.netapp.com/advisory/ntap-20240402-0002">https://security.netapp.com/advisory/ntap-20240402-0002</a>
+          <a href="https://security.netapp.com/advisory/ntap-20240402-0002/">https://security.netapp.com/advisory/ntap-20240402-0002/</a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2024-23672">https://www.cve.org/CVERecord?id=CVE-2024-23672</a>
+        </td>
+      </tr>
+      <tr class="severity-HIGH">
+        <td class="pkg-name">org.springframework:spring-web</td>
+        <td>CVE-2024-22243</td>
+        <td class="severity">HIGH</td>
+        <td class="pkg-version">6.1.3</td>
+        <td>6.1.4, 6.0.17, 5.3.32</td>
+        <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2024-22243">https://access.redhat.com/security/cve/CVE-2024-22243</a>
+          <a href="https://github.com/spring-projects/spring-framework">https://github.com/spring-projects/spring-framework</a>
+          <a href="https://github.com/spring-projects/spring-framework/blob/main/spring-web/src/main/java/org/springframework/web/util/UriComponentsBuilder.java">https://github.com/spring-projects/spring-framework/blob/main/spring-web/src/main/java/org/springframework/web/util/UriComponentsBuilder.java</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-22243">https://nvd.nist.gov/vuln/detail/CVE-2024-22243</a>
+          <a href="https://security.netapp.com/advisory/ntap-20240524-0001">https://security.netapp.com/advisory/ntap-20240524-0001</a>
+          <a href="https://spring.io/security/cve-2024-22243">https://spring.io/security/cve-2024-22243</a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2024-22243">https://www.cve.org/CVERecord?id=CVE-2024-22243</a>
+        </td>
+      </tr>
+      <tr class="severity-HIGH">
+        <td class="pkg-name">org.springframework:spring-web</td>
+        <td>CVE-2024-22259</td>
+        <td class="severity">HIGH</td>
+        <td class="pkg-version">6.1.3</td>
+        <td>6.1.5, 6.0.18, 5.3.33</td>
+        <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2024-22259">https://access.redhat.com/security/cve/CVE-2024-22259</a>
+          <a href="https://github.com/spring-projects/spring-framework">https://github.com/spring-projects/spring-framework</a>
+          <a href="https://github.com/spring-projects/spring-framework/commit/297cbae2990e1413537c55845a7e0ea0ffd9f9bb">https://github.com/spring-projects/spring-framework/commit/297cbae2990e1413537c55845a7e0ea0ffd9f9bb</a>
+          <a href="https://github.com/spring-projects/spring-framework/commit/381f790329a48b74c2a49fc1384dd68ca9153501">https://github.com/spring-projects/spring-framework/commit/381f790329a48b74c2a49fc1384dd68ca9153501</a>
+          <a href="https://github.com/spring-projects/spring-framework/commit/f2fd2f12269c6a781c5b2c20b3c24141055a3d68">https://github.com/spring-projects/spring-framework/commit/f2fd2f12269c6a781c5b2c20b3c24141055a3d68</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-22259">https://nvd.nist.gov/vuln/detail/CVE-2024-22259</a>
+          <a href="https://security.netapp.com/advisory/ntap-20240524-0002">https://security.netapp.com/advisory/ntap-20240524-0002</a>
+          <a href="https://spring.io/security/cve-2024-22259">https://spring.io/security/cve-2024-22259</a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2024-22259">https://www.cve.org/CVERecord?id=CVE-2024-22259</a>
+        </td>
+      </tr>
+      <tr class="severity-HIGH">
+        <td class="pkg-name">org.springframework:spring-web</td>
+        <td>CVE-2024-22262</td>
+        <td class="severity">HIGH</td>
+        <td class="pkg-version">6.1.3</td>
+        <td>5.3.34, 6.0.19, 6.1.6</td>
+        <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2024-22262">https://access.redhat.com/security/cve/CVE-2024-22262</a>
+          <a href="https://github.com/spring-projects/spring-framework">https://github.com/spring-projects/spring-framework</a>
+          <a href="https://github.com/spring-projects/spring-framework/blob/main/spring-web/src/main/java/org/springframework/web/util/UriComponentsBuilder.java">https://github.com/spring-projects/spring-framework/blob/main/spring-web/src/main/java/org/springframework/web/util/UriComponentsBuilder.java</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-22262">https://nvd.nist.gov/vuln/detail/CVE-2024-22262</a>
+          <a href="https://security.netapp.com/advisory/ntap-20240524-0003">https://security.netapp.com/advisory/ntap-20240524-0003</a>
+          <a href="https://spring.io/security/cve-2024-22262">https://spring.io/security/cve-2024-22262</a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2024-22262">https://www.cve.org/CVERecord?id=CVE-2024-22262</a>
+        </td>
+      </tr>
+      <tr><th colspan="6">No Misconfigurations found</th></tr>
+      <tr class="group-header"><th colspan="6">nuget</th></tr>
+      <tr class="sub-header">
+        <th>Package</th>
+        <th>Vulnerability ID</th>
+        <th>Severity</th>
+        <th>Installed Version</th>
+        <th>Fixed Version</th>
+        <th>Links</th>
+      </tr>
+      <tr class="severity-HIGH">
+        <td class="pkg-name">Newtonsoft.Json</td>
+        <td>CVE-2024-21907</td>
+        <td class="severity">HIGH</td>
+        <td class="pkg-version">10.0.3</td>
+        <td>13.0.1</td>
+        <td class="links" data-more-links="off">
+          <a href="https://alephsecurity.com/2018/10/22/StackOverflowException">https://alephsecurity.com/2018/10/22/StackOverflowException</a>
+          <a href="https://alephsecurity.com/2018/10/22/StackOverflowException/">https://alephsecurity.com/2018/10/22/StackOverflowException/</a>
+          <a href="https://alephsecurity.com/vulns/aleph-2018004">https://alephsecurity.com/vulns/aleph-2018004</a>
+          <a href="https://github.com/JamesNK/Newtonsoft.Json">https://github.com/JamesNK/Newtonsoft.Json</a>
+          <a href="https://github.com/JamesNK/Newtonsoft.Json/commit/7e77bbe1beccceac4fc7b174b53abfefac278b66">https://github.com/JamesNK/Newtonsoft.Json/commit/7e77bbe1beccceac4fc7b174b53abfefac278b66</a>
+          <a href="https://github.com/JamesNK/Newtonsoft.Json/issues/2457">https://github.com/JamesNK/Newtonsoft.Json/issues/2457</a>
+          <a href="https://github.com/JamesNK/Newtonsoft.Json/pull/2462">https://github.com/JamesNK/Newtonsoft.Json/pull/2462</a>
+          <a href="https://github.com/advisories/GHSA-5crp-9r3c-p9vr">https://github.com/advisories/GHSA-5crp-9r3c-p9vr</a>
+          <a href="https://security.snyk.io/vuln/SNYK-DOTNET-NEWTONSOFTJSON-2774678">https://security.snyk.io/vuln/SNYK-DOTNET-NEWTONSOFTJSON-2774678</a>
+          <a href="https://vulncheck.com/advisories/vc-advisory-GHSA-5crp-9r3c-p9vr">https://vulncheck.com/advisories/vc-advisory-GHSA-5crp-9r3c-p9vr</a>
+        </td>
+      </tr>
+      <tr><th colspan="6">No Misconfigurations found</th></tr>
+      <tr class="group-header"><th colspan="6">pom</th></tr>
+      <tr class="sub-header">
+        <th>Package</th>
+        <th>Vulnerability ID</th>
+        <th>Severity</th>
+        <th>Installed Version</th>
+        <th>Fixed Version</th>
+        <th>Links</th>
+      </tr>
+      <tr class="severity-HIGH">
+        <td class="pkg-name">ch.qos.logback:logback-classic</td>
+        <td>CVE-2023-6378</td>
+        <td class="severity">HIGH</td>
+        <td class="pkg-version">1.2.11</td>
+        <td>1.3.12, 1.4.12, 1.2.13</td>
+        <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2023-6378">https://access.redhat.com/security/cve/CVE-2023-6378</a>
+          <a href="https://github.com/qos-ch/logback">https://github.com/qos-ch/logback</a>
+          <a href="https://github.com/qos-ch/logback/commit/9c782b45be4abdafb7e17481e24e7354c2acd1eb">https://github.com/qos-ch/logback/commit/9c782b45be4abdafb7e17481e24e7354c2acd1eb</a>
+          <a href="https://github.com/qos-ch/logback/commit/b8eac23a9de9e05fb6d51160b3f46acd91af9731">https://github.com/qos-ch/logback/commit/b8eac23a9de9e05fb6d51160b3f46acd91af9731</a>
+          <a href="https://github.com/qos-ch/logback/commit/bb095154be011267b64e37a1d401546e7cc2b7c3">https://github.com/qos-ch/logback/commit/bb095154be011267b64e37a1d401546e7cc2b7c3</a>
+          <a href="https://github.com/qos-ch/logback/issues/745#issuecomment-1836227158">https://github.com/qos-ch/logback/issues/745#issuecomment-1836227158</a>
+          <a href="https://logback.qos.ch/manual/receivers.html">https://logback.qos.ch/manual/receivers.html</a>
+          <a href="https://logback.qos.ch/news.html#1.2.13">https://logback.qos.ch/news.html#1.2.13</a>
+          <a href="https://logback.qos.ch/news.html#1.3.12">https://logback.qos.ch/news.html#1.3.12</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-6378">https://nvd.nist.gov/vuln/detail/CVE-2023-6378</a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2023-6378">https://www.cve.org/CVERecord?id=CVE-2023-6378</a>
+        </td>
+      </tr>
+      <tr class="severity-HIGH">
+        <td class="pkg-name">ch.qos.logback:logback-core</td>
+        <td>CVE-2023-6378</td>
+        <td class="severity">HIGH</td>
+        <td class="pkg-version">1.2.11</td>
+        <td>1.3.12, 1.4.12, 1.2.13</td>
+        <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2023-6378">https://access.redhat.com/security/cve/CVE-2023-6378</a>
+          <a href="https://github.com/qos-ch/logback">https://github.com/qos-ch/logback</a>
+          <a href="https://github.com/qos-ch/logback/commit/9c782b45be4abdafb7e17481e24e7354c2acd1eb">https://github.com/qos-ch/logback/commit/9c782b45be4abdafb7e17481e24e7354c2acd1eb</a>
+          <a href="https://github.com/qos-ch/logback/commit/b8eac23a9de9e05fb6d51160b3f46acd91af9731">https://github.com/qos-ch/logback/commit/b8eac23a9de9e05fb6d51160b3f46acd91af9731</a>
+          <a href="https://github.com/qos-ch/logback/commit/bb095154be011267b64e37a1d401546e7cc2b7c3">https://github.com/qos-ch/logback/commit/bb095154be011267b64e37a1d401546e7cc2b7c3</a>
+          <a href="https://github.com/qos-ch/logback/issues/745#issuecomment-1836227158">https://github.com/qos-ch/logback/issues/745#issuecomment-1836227158</a>
+          <a href="https://logback.qos.ch/manual/receivers.html">https://logback.qos.ch/manual/receivers.html</a>
+          <a href="https://logback.qos.ch/news.html#1.2.13">https://logback.qos.ch/news.html#1.2.13</a>
+          <a href="https://logback.qos.ch/news.html#1.3.12">https://logback.qos.ch/news.html#1.3.12</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-6378">https://nvd.nist.gov/vuln/detail/CVE-2023-6378</a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2023-6378">https://www.cve.org/CVERecord?id=CVE-2023-6378</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">io.netty:netty-codec-http</td>
+        <td>CVE-2024-29025</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">4.1.92.Final</td>
+        <td>4.1.108.Final</td>
+        <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2024-29025">https://access.redhat.com/security/cve/CVE-2024-29025</a>
+          <a href="https://gist.github.com/vietj/f558b8ea81ec6505f1e9a6ca283c9ae3">https://gist.github.com/vietj/f558b8ea81ec6505f1e9a6ca283c9ae3</a>
+          <a href="https://github.com/netty/netty">https://github.com/netty/netty</a>
+          <a href="https://github.com/netty/netty/commit/0d0c6ed782d13d423586ad0c71737b2c7d02058c">https://github.com/netty/netty/commit/0d0c6ed782d13d423586ad0c71737b2c7d02058c</a>
+          <a href="https://github.com/netty/netty/security/advisories/GHSA-5jpm-x58v-624v">https://github.com/netty/netty/security/advisories/GHSA-5jpm-x58v-624v</a>
+          <a href="https://github.com/vietj/netty/tree/post-request-decoder">https://github.com/vietj/netty/tree/post-request-decoder</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-29025">https://nvd.nist.gov/vuln/detail/CVE-2024-29025</a>
+          <a href="https://security.snyk.io/vuln/SNYK-JAVA-IONETTY-6483812">https://security.snyk.io/vuln/SNYK-JAVA-IONETTY-6483812</a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2024-29025">https://www.cve.org/CVERecord?id=CVE-2024-29025</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">io.netty:netty-handler</td>
+        <td>CVE-2023-34462</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">4.1.92.Final</td>
+        <td>4.1.94.Final</td>
+        <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2023-34462">https://access.redhat.com/security/cve/CVE-2023-34462</a>
+          <a href="https://github.com/netty/netty">https://github.com/netty/netty</a>
+          <a href="https://github.com/netty/netty/commit/535da17e45201ae4278c0479e6162bb4127d4c32">https://github.com/netty/netty/commit/535da17e45201ae4278c0479e6162bb4127d4c32</a>
+          <a href="https://github.com/netty/netty/security/advisories/GHSA-6mjq-h674-j845">https://github.com/netty/netty/security/advisories/GHSA-6mjq-h674-j845</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-34462">https://nvd.nist.gov/vuln/detail/CVE-2023-34462</a>
+          <a href="https://security.netapp.com/advisory/ntap-20230803-0001">https://security.netapp.com/advisory/ntap-20230803-0001</a>
+          <a href="https://security.netapp.com/advisory/ntap-20230803-0001/">https://security.netapp.com/advisory/ntap-20230803-0001/</a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2023-34462">https://www.cve.org/CVERecord?id=CVE-2023-34462</a>
+          <a href="https://www.debian.org/security/2023/dsa-5558">https://www.debian.org/security/2023/dsa-5558</a>
+        </td>
+      </tr>
+      <tr><th colspan="6">No Misconfigurations found</th></tr>
+      <tr class="group-header"><th colspan="6"></th></tr>
+      <tr><th colspan="6">No Vulnerabilities found</th></tr>
+      <tr><th colspan="6">No Misconfigurations found</th></tr>
+      <tr class="group-header"><th colspan="6"></th></tr>
+      <tr><th colspan="6">No Vulnerabilities found</th></tr>
+      <tr><th colspan="6">No Misconfigurations found</th></tr>
+      <tr class="group-header"><th colspan="6"></th></tr>
+      <tr><th colspan="6">No Vulnerabilities found</th></tr>
+      <tr><th colspan="6">No Misconfigurations found</th></tr>
+      <tr class="group-header"><th colspan="6"></th></tr>
+      <tr><th colspan="6">No Vulnerabilities found</th></tr>
+      <tr><th colspan="6">No Misconfigurations found</th></tr>
+      <tr class="group-header"><th colspan="6"></th></tr>
+      <tr><th colspan="6">No Vulnerabilities found</th></tr>
+      <tr><th colspan="6">No Misconfigurations found</th></tr>
+    </table>
+  </body>
+</html>
